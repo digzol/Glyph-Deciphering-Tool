@@ -1,0 +1,98 @@
+body {
+    background-color: #3a3232;
+    display: flex;
+    font-family: Arial, serif;
+    color: #cbcbcb;
+}
+
+img {
+    display: block;
+}
+
+canvas, .glyph-img {
+    display: block;
+    background-color: #1a1a1a;
+    border: 1px solid #111111;
+}
+
+canvas,
+.glyph-entry .glyph-img,
+.btn-glyph .glyph-img,
+.sample-text-glyph .glyph-img {
+    cursor: pointer;
+}
+
+.glyph-entry {
+    margin: 10px;
+    display: flex;
+    align-items: center
+}
+
+.glyph-entry .glyph-img {
+    width: 50px;
+}
+
+.glyph-entry .glyph-def {
+    margin: 0 20px;
+    height: 16px;
+    width: 16px;
+    text-align: center;
+}
+
+.glyph-entry .glyph-frequency {
+    margin-left: 15px;
+}
+
+#center-pane {
+    margin-left: 50px;
+    width: 50%;
+}
+
+#active-text-sample {
+    display: flex;
+    background-color: #5a4f4f;
+    border: 1px solid #1a1a1a;
+    min-height: 32px;
+    padding-bottom: 5px;
+    flex-wrap: wrap;
+}
+
+#active-text-sample .sample-text-glyph {
+    margin: 5px 0 0 5px;
+}
+
+#available-glyphs {
+    display: flex;
+    padding: 10px 0 5px 10px;
+}
+
+#available-glyphs .btn-glyph {
+    margin: 0 5px 5px 0;
+}
+
+.sample-text-glyph .glyph-img,
+.sample-entry .glyph-img,
+.btn-glyph .glyph-img {
+    width: 25px;
+}
+
+#samples-pane {
+    padding-top: 15px;
+}
+
+.sample-entry {
+    display: flex;
+    border-top: 1px solid #5a4f4f;
+    margin: 0 15px;
+    padding: 15px 15px 10px 15px;
+    text-align: center;
+}
+
+.sample-entry .glyph-wrapper {
+    margin: 0 5px 5px 0;
+}
+
+.btn-delete-sample {
+    align-self: flex-start;
+    margin-left: auto;
+}

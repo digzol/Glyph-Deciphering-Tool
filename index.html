@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Glyph Deciphering Tool</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="scripts/drawing-canvas.js"></script>
+    <script src="scripts/data-store.js"></script>
+    <script src="scripts/deciphering-tool.js"></script>
+</head>
+<body>
+<div id="left-pane">
+    <div id="drawing-glyph-pane" style="display: flex">
+        <canvas id="drawing-glyph-canvas" width="100" height="100"></canvas>
+        <div style="padding-left: 10px">
+            <button id="btn-addGlyph">Add Glyph</button>
+            <button id="btn-clearGlyph">Clear</button>
+        </div>
+    </div>
+    <div id="glyph-dictionary-pane">
+        <div id="dictionary-entry-template" class="glyph-entry" style="display:none">
+            <img class="glyph-img" src="#" alt=""/>
+            <input class="glyph-def" type="text" size="1"/>
+            <button class="btn-delete-glyph">Delete</button>
+            <span class="glyph-frequency">0</span>
+        </div>
+        <div id="glyph-dictionary-entries"></div>
+    </div>
+</div>
+<div id="center-pane">
+    <div id="sample-writing-pane">
+        <div id="active-text-sample">
+            <div id="sample-text-template" class="sample-text-glyph" style="display: none">
+                <img class="glyph-img" src="#" alt=""/>
+            </div>
+        </div>
+        <div id="available-glyphs">
+            <div id="glyph-button-template" class="btn-glyph" style="display:none">
+                <img class="glyph-img" src="#" alt=""/>
+            </div>
+        </div>
+        <button id="btn-save-sample">Save sample</button>
+    </div>
+    <div id="samples-pane">
+        <div id="sample-entries"></div>
+    </div>
+</div>
+</body>
+</html>
